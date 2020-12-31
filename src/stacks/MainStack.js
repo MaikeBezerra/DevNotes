@@ -9,7 +9,14 @@ const Stack = createStackNavigator();
 
 export default ()=> (
     <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={
+            {
+                headerStyle:{
+                    backgroundColor: '#222'
+                },
+                headerTintColor: '#FFF'
+            }
+        }>
             <Stack.Screen name="Home" component={ListScreen} />
         </Stack.Navigator>
     </NavigationContainer>
