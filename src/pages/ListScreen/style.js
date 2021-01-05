@@ -13,5 +13,22 @@ export const styles = StyleSheet.create({
     addButton: {
        width: 24,
        height: 24
+    },
+    noteList: {
+        flex: 1,
+        width: '100%'
+    },
+    noNoteContainer: {
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    noNoteImg: {
+        width: 50,
+        height: 50,
+        marginBottom: 10
+    },
+    noNoteMsg: {
+        color: "#FFF",
+        fontSize: 17
     }
 })

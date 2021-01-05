@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from "@react-navigation/native";
 
 import ListScreen from "../pages/ListScreen";
+import EditNoteScreen from "../pages/EditNoteScreen";
 
 const Stack = createStackNavigator();
 
@@ -18,6 +18,7 @@ export default ()=> (
             }
         }>
             <Stack.Screen name="Home" component={ListScreen} />
+            <Stack.Screen name="EditNote" component={EditNoteScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 );
